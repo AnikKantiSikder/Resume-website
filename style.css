@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #32e2d7;
+    --text-color: #727171;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* common styles */
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.item__pretitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.item__title {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.item__subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* layouts */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+    background: #070707;
+    gap: 4rem;
+}
+
+
+/* for mobile devices*/
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+
+.group__1,
+.group__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+/* profile styles starts */
+.profile__container {
+    display: flex;
+    gap: 2rem;
+}
+.profile__image {
+    max-width: 250px;
+}
+
+.profile__name--firstname {
+    font-size: clamp(2rem, 8vw, 4rem);
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile__name--lastname {
+    font-size: clamp(2.5rem, 15vw, 5rem);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+.profile__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.downloadBtn {
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.downloadBtn:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+.profile__container {
+    flex-direction: column;
+}
+}
+/* profile styles ends */
+
+/* expertise styles starts */
+.expertise__list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+/* expertise styles ends */
+
+/* reference styles starts */
+.reference__item {
+    margin-top: 2rem;
+}
+
+.reference__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/* reference styles ends */
+
+/* education styles starts */
+.education__item {
+    margin-top: 2rem;
+}
+/* education styles ends */
+
+/* certification styles starts */
+.certification__item {
+    margin-top: 2rem;
+}
+/* certification styles ends */
+
+/* experience styles starts */
+.experience__item {
+    margin-top: 2rem;
+}
+/* experience styles ends */
+
+/* awards styles starts */
+.awards__item {
+    margin-top: 2rem;
+}
+/* awards styles ends */
+
+/* interest styles starts */
+.interest__items {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interest__item {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.interest__item svg {
+    width: 2rem;
+}
+/* interest styles ends */
